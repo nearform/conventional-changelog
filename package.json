@@ -9,7 +9,10 @@
   "engines": {
     "node": ">=10"
   },
-  "files": [],
+  "files": [
+    "scripts/install.sh",
+    "packages"
+  ],
   "homepage": "https://github.com/conventional-changelog/conventional-changelog#readme",
   "keywords": [
     "conventional-changelog",
@@ -17,7 +20,7 @@
     "generation"
   ],
   "license": "ISC",
-  "main": "",
+  "main": "packages/conventional-recommended-bump",
   "name": "conventional-changelog-monorepo",
   "private": true,
   "renovate": {
@@ -29,6 +32,10 @@
       ":gitSignOff",
       ":preserveSemverRanges"
     ]
+  },
+  "exports": {
+    "./packages/conventional-changelog-conventionalcommits": "./packages/conventional-changelog-conventionalcommits/index.js",
+    "./packages/conventional-recommended-bump": "./packages/conventional-recommended-bump/index.js"
   },
   "repository": {
     "type": "git",
