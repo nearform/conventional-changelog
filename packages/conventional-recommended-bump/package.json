@@ -19,6 +19,7 @@
   "engines": {
     "node": ">=10"
   },
+  "main": "index.js",
   "files": [
     "index.js",
     "cli.js",
